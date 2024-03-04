@@ -8,7 +8,7 @@ Charles Gandolpho
 
 
 /* CSS Reset */
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
@@ -21,18 +21,23 @@ body {
 }
 
 /* Layout */
-.Container{
+.Container {
     margin: 0 auto;   
 }
 
-.Flex{
+.Flex {
     display: flex;
     justify-content: space-between;
    }
 
-.Flex2{
+.Flex2 {
     display: flex;
     align-items: center;
+}
+
+.Flex3 {
+    display: flex;
+    flex-direction: column;
 }
 
 .Botao {
@@ -47,7 +52,7 @@ body {
 }
    
 /* topo do site */
-#topo{
+#topo {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -56,7 +61,7 @@ body {
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>> */
 
 /* cabecalho */
-header{
+header {
     height: 60px;
 }
 #logo img {
@@ -87,7 +92,7 @@ nav ul {
     transition: all 0.8s;
 }
 
-#check:checked  ~ ul{
+#check:checked  ~ ul {
     right: 0;
 }
 
@@ -140,38 +145,61 @@ main h2 {
     padding: 0px 10px;
 }
 
-#textoSobre h2{
+#textoSobre h2 {
     margin-bottom: 10px;
 }
 
 .TopicosSobre {
     margin-top: 20px;
 }
-.TopicosSobre img{
+.TopicosSobre img {
     margin-right: 10px;
 }
 
+/* One Page */
+#onepage    {
+    padding: 50px 10px;
+}
 
+#onepage h2 {
+    margin-bottom: 10px;
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    border: 0px;
+}
  
 /* Smartphone Landscap >>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 576px){
+@media (min-width: 576px) {
    
     /* Layout */
-    .Container{
+    .Container {
         max-width: 540px;
     }
 
-    /* Destque  */
+    /* Destaque  */
     main h1, main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em;
     }
-} 
+
+    /* One Page */
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px){
+@media (min-width: 768px) {
     
         /* Layout */
-        .Container{
-            max-width: 720px;
+    .Container {
+        max-width: 720px;
         }
 
     /* Destque  */
@@ -192,7 +220,7 @@ main h2 {
 @media (min-width: 992px){
    
         /* Layout */
-        .Container{
+        .Container {
             max-width: 960px;
         }
 
@@ -206,11 +234,11 @@ main h2 {
     @media (min-width: 1200px){
     
             /* Layout */
-            .Container{
-                max-width: 1140px;
-            }
+    .Container{
+        max-width: 1140px;
+    }
             /* cabecalho */
-    header{
+    header {
         height: 120px;
     }
     #logo img {
@@ -244,18 +272,23 @@ main h2 {
     }
 
     /* Sobre */
-    #sobre{
+    #sobre {
         background-attachment: fixed;
     }
 
-
-    #destaqueSobre{
+    #destaqueSobre {
         display: inline;
     }
 
-    #destaqueSobre img{
+    #destaqueSobre img {
         border-radius: 50%;
         margin-right: 50px;
-    } 
+    }
+
+    /*  One Page */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
+    }
         
 }

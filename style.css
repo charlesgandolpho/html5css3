@@ -91,7 +91,7 @@ body {
 }
 
 .Card img {
-    border-radius: 25px 25px 0px 0px;    
+    border-radius: 25px 25px 0px 0px;
 }
 
 .Card h3 {
@@ -101,7 +101,7 @@ body {
 .Card p {
     text-align: left;
     color: #434343;
-    padding: 10px 30px 50px 30px;    
+    padding: 10px 30px 50px 30px;
 }
 
 .Card a {
@@ -135,12 +135,12 @@ label {
 
 nav ul {
     list-style: none;
-    background-color: #343538;
+    background-color: rgba(52, 53, 56, 0.95);
     height: 100vh;
     position: fixed;
     top: 60px;
-    right: -100%;
-    width: 100%;
+    right: -65%;
+    width: 65%;
     transition: all 0.8s;
 }
 
@@ -151,6 +151,7 @@ nav ul {
 nav ul li {
     padding: 20px;
     border-bottom: 1px solid #a9a9a9;
+    text-align: right;
 }
 
 nav ul li a {
@@ -228,8 +229,8 @@ main h2 {
     border: 0px;
 }
 
- /*  Wireframe */
- #wireframe {
+/*  Wireframe */
+#wireframe {
     padding: 50px 0px;
     background: url(img/background.png);
     background-size: cover;
@@ -254,13 +255,13 @@ main h2 {
 }
 
 #qrcode {
-    display: none;        
+    display: none;
 }
 
 /* Conteudo */
 
 #conteudo {
-    padding: 50px 0px;    
+    padding: 50px 0px;
 }
 
 #conteudo h2 {
@@ -270,14 +271,14 @@ main h2 {
 
 #todos {
     margin-top: 50px;
-    text-align: center;    
+    text-align: center;
 }
 
 #todos a {
     text-decoration: none;
     color: #000;
     font-weight: 700;
-    font-size: 1.25em;    
+    font-size: 1.25em;
 }
 
 /* Rodapé */
@@ -303,7 +304,7 @@ address img {
 }
 
 #dados {
-    margin: 30px 0px 15px 0px;    
+    margin: 30px 0px 15px 0px;
 }
 
 #googleMaps {
@@ -416,6 +417,7 @@ footer {
 
     nav ul {
         position: static;
+        width: 100%;
         height: auto;
         background-color: transparent;
         margin-top: 50px;

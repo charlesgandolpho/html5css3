@@ -14,6 +14,10 @@ Charles Gandolpho
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -44,6 +48,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.Flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Flex6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .Botao {
@@ -261,8 +276,49 @@ main h2 {
 #todos a {
     text-decoration: none;
     color: #000;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.25em;    
+}
+
+/* Rodapé */
+address {
+    padding: 35px 10px 50px 10px;
+    background: url(img/background2.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address img {
+    padding-top: 15px;
+}
+
+#iconeLocal {
+    display: none;
+}
+
+#dados {
+    margin: 30px 0px 15px 0px;    
+}
+
+#googleMaps {
+    display: none;
+}
+
+footer {
+    padding: 50px;
+    background-color: #343538;
+    color: #fff;
+    text-align: center;
+}
+
+#social {
+    margin-bottom: 25px;
 }
 
 /* Smartphone Landscap >>>>>>>>>>>>>>>>>>>>> */
@@ -283,6 +339,17 @@ main h2 {
     #video iframe {
         width: 560px;
         height: 315px;
+    }
+
+    /* Rodapé */
+    .Flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin: 0px;
     }
 }
 
@@ -403,6 +470,23 @@ main h2 {
     #qrcode img {
         width: 225px;
         height: 225px;
+    }
+
+    /* Rodapé */
+    #iconeLocal {
+        display: inline;
+    }
+
+    #iconeMapa {
+        display: none;
+    }
+
+    #googleMaps {
+        display: inline;
+    }
+
+    .Flex6 {
+        flex-direction: row-reverse;
     }
 
 }
